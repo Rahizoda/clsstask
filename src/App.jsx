@@ -49,7 +49,7 @@ export default function App() {
     } catch (error) {
       console.log(error);
     }
-
+  }
 
   useEffect(() => {
     Get()
@@ -131,3 +131,4 @@ export default function App() {
     </div>
   );
 }
+  
