@@ -41,6 +41,16 @@ export default function App() {
     }
   }
 
+
+  async function deleteData(id) {
+    try {
+      await axios.delete(`${api}/${id}`)
+      Get()
+    } catch (error) {
+      console.log(error);
+    }
+
+
   useEffect(() => {
     Get()
   },[])
@@ -110,6 +120,7 @@ export default function App() {
               <h1 className="text-lg font-semibold"> {el.name} </h1>
                 <h1 className="text-gray-600"> {el.description} </h1>
                 <button className="text-blue-500 border border-blue-500 rounded-[2px] p-[10px_30px] ">Edit</button>
+                <button onClick={() => deleteData(el.id)} className="text-blue-500 border border-blue-500 rounded-[2px] p-[10px_30px] ">Delete</button>
 
             </div>
            )
