@@ -77,7 +77,7 @@ export default function App() {
   return (
     <div className="min-h-screen  bg-gray-100 p-4">
       <Drawer className='h-screen' >
-        <DrawerTrigger >Open</DrawerTrigger>
+        <DrawerTrigger className='bg-blue-500 text-white p-2 rounded-md'>Open Modal</DrawerTrigger>
         <DrawerContent className='h-[600px]'>
           <DrawerHeader >
 
