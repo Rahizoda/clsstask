@@ -98,13 +98,7 @@ export default function App() {
 
           </DrawerHeader>
           <DrawerFooter>
-
-            <Button >Submit</Button>
-            <DrawerClose>
-
-              <Button  >Cancel</Button>
-            </DrawerClose>
-
+            <DrawerClose className='bg-red-500 text-white p-2 rounded-md'>Close</DrawerClose>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>
